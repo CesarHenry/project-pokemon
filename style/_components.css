@@ -1,0 +1,434 @@
+.tag {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 244px;
+  max-width: 12.1rem;
+  padding: 6px 4px;
+}
+
+.tag .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: rgba(194, 0, 0, 0.12);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.tag span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #c20001;
+}
+
+.blue_tag .icon {
+  background-color: rgba(63, 104, 186, 0.15);
+}
+
+.blue_tag span {
+  color: #3f67ba;
+}
+
+/* SEARCH */
+.search {
+  background-color: #ffffff;
+  border-radius: 122px;
+  width: 100%;
+  max-width: 40.3rem;
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 0.7rem;
+}
+.search input[type="text"] {
+  border: 0;
+  outline: none;
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #a0afba;
+}
+
+.search input::placeholder {
+  color: #a0afba;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: rgba(158, 185, 255, 0.1);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.search button:hover {
+  border-color: #3e75c3;
+}
+
+.type-filter {
+  display: flex;
+  align-items: center;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.type-filter:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.type-filter .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+}
+
+.type-filter span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+.type-filter.bug span {
+  color: #9bba48;
+}
+
+.type-filter.dark span {
+  color: #595761;
+}
+
+.type-filter.dragon span {
+  color: #2c6ac1;
+}
+
+.type-filter.electric span {
+  color: #eed967;
+}
+
+.type-filter.fairy span {
+  color: #e296e1;
+}
+
+.type-filter.fighting span {
+  color: #c44d61;
+}
+
+.type-filter.ground span {
+  color: #ce8056;
+}
+
+.type-filter.ice span {
+  color: #8bcec1;
+}
+
+.type-filter.normal span {
+  color: #a0a29f;
+}
+
+.type-filter.poison span {
+  color: #ac6aca;
+}
+
+.type-filter.psychic span {
+  color: #eb8b85;
+}
+
+.type-filter.rock span {
+  color: #8bcec1;
+}
+
+.type-filter.ghost span {
+  color: #616eb7;
+}
+
+.type-filter.grass span {
+  color: #5ca48a;
+}
+
+.type-filter.steal span {
+  color: #6594a1;
+}
+
+.type-filter.water span {
+  color: #88a3d4;
+}
+
+.type-filter.fire span {
+  color: #e96303;
+}
+
+.type-filter.flying span {
+  color: #a6bbe8;
+}
+
+/* CARDS */
+.card-pokemon {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  height: 30.4rem;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.3);
+  border-radius: 12px;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.card-pokemon:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
+}
+
+.bug .image::after {
+  background-color: rgb(155, 186, 72, 0.2);
+}
+
+.dark .image::after {
+  background-color: rgb(89, 87, 97, 0.2);
+}
+
+.dark .image::after {
+  background-color: rgb(89, 87, 97, 0.2);
+}
+
+.dragon .image::after {
+  background-color: rgb(44, 106, 193, 0.2);
+}
+
+.electric .image::after {
+  background-color: rgb(238, 217, 103, 0.2);
+}
+
+.fairy .image::after {
+  background-color: rgb(226, 150, 225, 0.2);
+}
+
+.fighting .image::after {
+  background-color: rgb(196, 77, 97, 0.2);
+}
+
+.ground .image::after {
+  background-color: rgb(206, 128, 86, 0.2);
+}
+
+.ice .image::after {
+  background-color: rgb(139, 206, 193, 0.2);
+}
+
+.normal .image::after {
+  background-color: rgb(160, 162, 159, 0.2);
+}
+
+.poison .image::after {
+  background-color: rgb(172, 106, 202, 0.2);
+}
+
+.psychic .image::after {
+  background-color: rgb(235, 139, 133, 0.2);
+}
+
+.rock .image::after {
+  background-color: rgb(139, 206, 193, 0.2);
+}
+
+.ghost .image::after {
+  background-color: rgb(97, 110, 183, 0.2);
+}
+
+.grass .image::after {
+  background-color: rgb(92, 164, 138, 0.2);
+}
+
+.steal .image::after {
+  background-color: rgb(101, 148, 161, 0.2);
+}
+
+.water .image::after {
+  background-color: rgb(136, 163, 212, 0.2);
+}
+
+.fire .image::after {
+  background-color: rgb(233, 99, 3, 0.2);
+}
+
+.flying .image::after {
+  background-color: rgb(166, 187, 232, 0.2);
+}
+
+.card-pokemon .image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+}
+
+.card-pokemon .image::after {
+  content: "";
+  width: 16.5rem;
+  height: 16.5rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.card-pokemon .info {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 2.8rem;
+}
+
+.card-pokemon .info .text span {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 150%;
+  margin-bottom: 6px;
+  color: #7a7d80;
+}
+
+.card-pokemon .info .icon {
+  margin-bottom: 1rem;
+}
+
+/* TAG TYPE */
+.tag-type {
+  display: inline-block;
+  padding: 0 2.5rem;
+  line-height: 2.4rem;
+  border-radius: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.tag-type.bug {
+  color: #9bba4b;
+  background-color: rgb(155, 186, 72, 0.2);
+}
+
+.tag-type.dark {
+  color: #595761;
+  background-color: rgb(89, 87, 97, 0.2);
+}
+
+.tag-type.dragon {
+  color: #2c6ac1;
+  background-color: rgb(44, 106, 193, 0.2);
+}
+
+.tag-type.electric {
+  color: #eed967;
+  background-color: rgb(238, 217, 103, 0.2);
+}
+
+.tag-type.fairy {
+  color: #e296e1;
+  background-color: rgb(226, 150, 225, 0.2);
+}
+
+.tag-type.fighting {
+  color: #c44d61;
+  background-color: rgb(196, 77, 97, 0.2);
+}
+
+.tag-type.ground {
+  color: #ce8056;
+  background-color: rgb(206, 128, 86, 0.2);
+}
+
+.tag-type.ice {
+  color: #8bcec1;
+  background-color: rgb(139, 206, 193, 0.2);
+}
+
+.tag-type.normal {
+  color: #a0a29f;
+  background-color: rgb(160, 162, 159, 0.2);
+}
+
+.tag-type.poison {
+  color: #ac6aca;
+  background-color: rgb(172, 106, 202, 0.2);
+}
+
+.tag-type.psychic {
+  color: #eb8b85;
+  background-color: rgb(235, 139, 133, 0.2);
+}
+
+.tag-type.rock {
+  color: #8bcec1;
+  background-color: rgb(139, 206, 193, 0.2);
+}
+
+.tag-type.ghost {
+  color: #616eb7;
+  background-color: rgb(97, 110, 183, 0.2);
+}
+
+.tag-type.grass {
+  color: #5ca48a;
+  background-color: rgb(92, 164, 138, 0.2);
+}
+
+.tag-type.steal {
+  color: #6594a1;
+  background-color: rgb(101, 148, 161, 0.2);
+}
+
+.tag-type.water {
+  color: #88a3d4;
+  background-color: rgb(136, 163, 212, 0.2);
+}
+
+.tag-type.fire {
+  color: #e96303;
+  background-color: rgb(233, 99, 3, 0.2);
+}
+
+.tag-type.flying {
+  color: #a6bbe8;
+  background-color: rgb(166, 187, 232, 0.2);
+}
+
+/* BUTTON LOAD MORE */
+.btn-load-more {
+  background-color: rgba(63, 93, 179, 0.1);
+  border-radius: 6px;
+  padding: 1.4rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.01em;
+  color: #3f5d83;
+  transition: all 0.3s;
+}
+
+.btn-load-more:hover {
+  background-color: #3f5d83;
+  color: #ffffff;
+}
