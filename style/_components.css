@@ -104,75 +104,75 @@
 }
 
 .type-filter.bug span {
-  color: #9bba48;
+  color: var(--type-bug);
 }
 
 .type-filter.dark span {
-  color: #595761;
+  color: var(--type-dark);
 }
 
 .type-filter.dragon span {
-  color: #2c6ac1;
+  color: var(--type-dragon);
 }
 
 .type-filter.electric span {
-  color: #eed967;
+  color: var(--type-electric);
 }
 
 .type-filter.fairy span {
-  color: #e296e1;
+  color: var(--type-fairy);
 }
 
 .type-filter.fighting span {
-  color: #c44d61;
+  color: var(--type-fighting);
 }
 
 .type-filter.ground span {
-  color: #ce8056;
+  color: var(--type-ground);
 }
 
 .type-filter.ice span {
-  color: #8bcec1;
+  color: var(--type-ice);
 }
 
 .type-filter.normal span {
-  color: #a0a29f;
+  color: var(--type-normal);
 }
 
 .type-filter.poison span {
-  color: #ac6aca;
+  color: var(--type-poison);
 }
 
 .type-filter.psychic span {
-  color: #eb8b85;
+  color: var(--type-psychic);
 }
 
 .type-filter.rock span {
-  color: #8bcec1;
+  color: var(--type-rock);
 }
 
 .type-filter.ghost span {
-  color: #616eb7;
+  color: var(--type-ghost);
 }
 
 .type-filter.grass span {
-  color: #5ca48a;
+  color: var(--type-grass);
 }
 
 .type-filter.steal span {
-  color: #6594a1;
+  color: var(--type-steal);
 }
 
 .type-filter.water span {
-  color: #88a3d4;
+  color: var(--type-water);
 }
 
 .type-filter.fire span {
-  color: #e96303;
+  color: var(--type-fire);
 }
 
 .type-filter.flying span {
-  color: #a6bbe8;
+  color: var(--type-flying);
 }
 
 /* CARDS */
@@ -325,92 +325,92 @@
 }
 
 .tag-type.bug {
-  color: #9bba4b;
+  color: var(--type-bug);
   background-color: rgb(155, 186, 72, 0.2);
 }
 
 .tag-type.dark {
-  color: #595761;
+  color: var(--type-dark);
   background-color: rgb(89, 87, 97, 0.2);
 }
 
 .tag-type.dragon {
-  color: #2c6ac1;
+  color: var(--type-dragon);
   background-color: rgb(44, 106, 193, 0.2);
 }
 
 .tag-type.electric {
-  color: #eed967;
+  color: var(--type-electric);
   background-color: rgb(238, 217, 103, 0.2);
 }
 
 .tag-type.fairy {
-  color: #e296e1;
+  color: var(--type-fairy);
   background-color: rgb(226, 150, 225, 0.2);
 }
 
 .tag-type.fighting {
-  color: #c44d61;
+  color: var(--type-fighting);
   background-color: rgb(196, 77, 97, 0.2);
 }
 
 .tag-type.ground {
-  color: #ce8056;
+  color: var(--type-ground);
   background-color: rgb(206, 128, 86, 0.2);
 }
 
 .tag-type.ice {
-  color: #8bcec1;
+  color: var(--type-ice);
   background-color: rgb(139, 206, 193, 0.2);
 }
 
 .tag-type.normal {
-  color: #a0a29f;
+  color: var(--type-normal);
   background-color: rgb(160, 162, 159, 0.2);
 }
 
 .tag-type.poison {
-  color: #ac6aca;
+  color: var(--type-poison);
   background-color: rgb(172, 106, 202, 0.2);
 }
 
 .tag-type.psychic {
-  color: #eb8b85;
+  color: var(--type-psychic);
   background-color: rgb(235, 139, 133, 0.2);
 }
 
 .tag-type.rock {
-  color: #8bcec1;
+  color: var(--type-rock);
   background-color: rgb(139, 206, 193, 0.2);
 }
 
 .tag-type.ghost {
-  color: #616eb7;
+  color: var(--type-ghost);
   background-color: rgb(97, 110, 183, 0.2);
 }
 
 .tag-type.grass {
-  color: #5ca48a;
+  color: var(--type-grass);
   background-color: rgb(92, 164, 138, 0.2);
 }
 
 .tag-type.steal {
-  color: #6594a1;
+  color: var(--type-steal);
   background-color: rgb(101, 148, 161, 0.2);
 }
 
 .tag-type.water {
-  color: #88a3d4;
+  color: var(--type-water);
   background-color: rgb(136, 163, 212, 0.2);
 }
 
 .tag-type.fire {
-  color: #e96303;
+  color: var(--type-fire);
   background-color: rgb(233, 99, 3, 0.2);
 }
 
 .tag-type.flying {
-  color: #a6bbe8;
+  color: var(--type-flying);
   background-color: rgb(166, 187, 232, 0.2);
 }
 
@@ -424,11 +424,258 @@
   font-size: 1.4rem;
   line-height: 1.7rem;
   letter-spacing: -0.01em;
-  color: #3f5d83;
+  color: var(--blue-primary);
   transition: all 0.3s;
 }
 
 .btn-load-more:hover {
-  background-color: #3f5d83;
+  background-color: var(--blue-primary);
   color: #ffffff;
+}
+
+/* MODAL  */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2022;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.modal[typePokemonModal="grass"] .box .left-container {
+  background-image: url("../assets/img/bg-types/grass.svg");
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rba(0, 0, 0, 0.5);
+}
+
+.box {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 71rem;
+  height: 50.8rem;
+  background-color: #ffffff;
+  z-index: 1;
+  box-shadow: 0px 10px 40px rgba(13, 12, 71, 0.05);
+  border-radius: 16px;
+  transform: translateY(4rem);
+  transition: transform 0.3s ease-in;
+}
+
+.box .close {
+  position: absolute;
+  top: -4.4rem;
+  right: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 19.1rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.left-container .icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2rem;
+  right: 2rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.left-container .image {
+  position: absolute;
+  left: 1.4rem;
+  bottom: 13.1rem;
+  width: 20.2rem;
+}
+
+.left-container .image img {
+  width: 100%;
+}
+
+.right-container {
+  padding: 3.5rem 7.2rem 2.9rem 7.4rem;
+}
+
+.right-container .name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.right-container .name h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.01em;
+  color: #2f3133;
+}
+
+.right-container .name span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: -0.01em;
+  margin-left: 10px;
+  color: #7a7d80;
+}
+
+.right-container .type {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3.2rem;
+  column-gap: 1rem;
+}
+
+.right-container .info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3.2rem;
+  column-gap: 4.8rem;
+}
+
+.right-container .info li span {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  color: #7a7d80;
+  margin-bottom: 0.4rem;
+}
+
+.right-container .info li strong {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.01em;
+  color: #2f3133;
+}
+
+.right-container .weak {
+  margin-bottom: 3.2rem;
+}
+
+.right-container .weak h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.6rem;
+  color: #4d5053;
+}
+
+.right-container .weak ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 1rem;
+}
+
+.right-container .stats h5 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.6rem;
+  color: #4d5053;
+}
+
+.right-container .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-container .item:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+
+.right-container .item span {
+  display: block;
+  width: 6.8rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #7a7d80;
+}
+
+.right-container .bar-status {
+  position: relative;
+  width: 100%;
+  max-width: 28.3rem;
+  height: 3px;
+  background-color: #eff3f6;
+}
+
+.right-container .bar-status .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56%;
+  height: 100%;
+  z-index: 0;
+  background-color: #c20001;
+}
+
+.right-container .separator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.right-container .separator li {
+  width: 4px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.right-container .separator li:not(:first-child) {
+  margin-left: 5.4rem;
+}
+
+/* OPEN MODAL  */
+.open-modal .modal {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.open-modal .modal .box {
+  transform: translateY(0);
 }
