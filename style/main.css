@@ -1,5 +1,8 @@
 @import "_reset.css";
 @import "_container.css";
+@import "_variables.css";
 @import "_components.css";
+@import "_home.css";
+@import "_header.css";
 @import "_titles.css";
 @import "_footer.css";
