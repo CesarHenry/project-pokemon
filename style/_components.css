@@ -87,6 +87,11 @@
   opacity: 1;
 }
 
+.type-filter.active {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 .type-filter .icon {
   display: flex;
   align-items: center;
@@ -100,6 +105,10 @@
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 150%;
+}
+
+.type-filter.all span {
+  color: var(--blue-primary);
 }
 
 .type-filter.bug span {
