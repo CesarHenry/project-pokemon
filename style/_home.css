@@ -150,3 +150,79 @@
 .swiper-slide.blue .area-explore .txt .icon {
   background-color: rgb(175, 192, 227, 0.1);
 }
+
+/* INFO POKEMONS  */
+.all-info-pokemons {
+  position: relative;
+  padding: 11.9rem 11.9rem 3rem 11.9rem;
+  margin-top: -28.8rem;
+  z-index: 2;
+}
+
+.all-info-pokemons .container {
+  display: initial;
+}
+
+.all-info-pokemons .top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 16.8rem;
+}
+
+.all-info-pokemons .top h2 {
+  max-width: 26.5rem;
+}
+
+.all-info-pokemons .area-all {
+  display: flex;
+}
+
+.area-all .info-left-container {
+  width: 100%;
+  max-width: 25rem;
+  padding-top: 7.1rem;
+  border-right: 1px solid #eff3f6;
+}
+
+.area-all .info-left-container ul li:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.area-all .info-right-container {
+  width: 100%;
+  padding-top: 7.1rem;
+  padding-left: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.info-right-container .top-container {
+  margin-bottom: 6.3rem;
+}
+
+.info-right-container .top-container > div {
+  display: flex;
+  align-items: center;
+}
+
+.info-right-container .top-container > div span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #4d5053;
+  margin-left: 0.6rem;
+}
+
+.info-right-container .all {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6rem;
+  row-gap: 4rem;
+  margin-bottom: 6.8rem;
+}
+
+.info-right-container .btn-load-more {
+  margin: 0 auto;
+  display: table;
+}
