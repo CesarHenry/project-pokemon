@@ -319,6 +319,20 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  .card-pokemon {
+    width: max-content;
+  }
+}
+
+@media (max-width: 560px) {
+  .card-pokemon {
+    width: 100%;
+    max-width: 86%;
+    margin: 0 auto;
+  }
+}
+
 /* TAG TYPE */
 .tag-type {
   display: inline-block;

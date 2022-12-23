@@ -214,6 +214,86 @@
   margin-left: 0.6rem;
 }
 
+.area-all .select-custom {
+  display: none;
+  position: relative;
+  margin-bottom: 5.5rem;
+}
+
+.area-all .select-custom.active .dropdown-select {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.area-all .select-custom .item-selected {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 5.6rem;
+  border: 1px solid #a0afba;
+  background: url("../assets/img/arrow-down-select.svg") no-repeat right 2.4rem
+    center;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.area-all .select-custom.active .item-selected {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.area-all .select-custom .item-selected span {
+  color: #7a7d80;
+  opacity: 0.6;
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+
+.area-all .select-custom .item-selected strong {
+  color: #7a7d80;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.area-all .select-custom .dropdown-select {
+  position: absolute;
+  width: 100%;
+  height: 22.5rem;
+  border: 1px solid #a0afba;
+  background-color: #ffffff;
+  border-top: 0;
+  padding: 2.1rem;
+  top: 5.6rem;
+  z-index: 2;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.dropdown-select::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown-select::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+.dropdown-select::-webkit-scrollbar-thumb {
+  background-color: #3d75c2;
+  border-radius: 5px;
+}
+
+.area-all .select-custom .dropdown-select li:first-child button {
+  padding-top: 0;
+}
+
+.area-all .select-custom .dropdown-select li button {
+  padding: 1rem 0;
+}
+
 .info-right-container .all {
   display: flex;
   flex-wrap: wrap;
@@ -225,4 +305,133 @@
 .info-right-container .btn-load-more {
   margin: 0 auto;
   display: table;
+}
+
+@media (max-width: 1200px) {
+  .all-info-pokemons {
+    padding: 11.9rem 3rem 2rem 3rem;
+  }
+
+  .all-info-pokemons .top .search {
+    max-width: 32.3rem;
+  }
+
+  .area-all .info-left-container {
+    max-width: 15.9rem;
+    padding-top: 4rem;
+  }
+
+  .area-all .info-right-container {
+    padding-top: 4rem;
+    padding-left: 2.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .info-right-container .top-container {
+    margin-bottom: 4rem;
+  }
+
+  .info-right-container .all {
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .area-slide-hero {
+    height: 95.4rem;
+  }
+
+  .swiper-slide .main-area {
+    padding-top: 10rem;
+  }
+
+  .slide-hero .swiper-slide.blue .main-area .text h1 {
+    max-width: 38.5rem;
+    margin: 0 auto;
+    margin-top: 2.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .main-area .area-explore {
+    display: none;
+  }
+
+  .main-area .text .image {
+    margin-top: 10rem;
+  }
+
+  .all-info-pokemons {
+    margin-top: -25.8rem;
+  }
+
+  .all-info-pokemons .top {
+    margin-bottom: 4rem;
+  }
+
+  .area-all .info-left-container {
+    display: none;
+  }
+
+  .area-all .info-right-container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .area-slide-hero {
+    overflow: hidden;
+    height: 104.5rem;
+  }
+
+  .slide-hero .swiper-slide::after {
+    bottom: auto;
+  }
+
+  .slide-hero .swiper-slide .main-area {
+    padding-top: 12rem;
+  }
+
+  .slide-hero .swiper-slide .main-area h1 {
+    font-size: 4.8rem;
+    line-height: 5.9rem;
+  }
+
+  .slide-hero .swiper-slide .main-area .image {
+    width: 135%;
+    right: 9rem;
+  }
+
+  .slide-hero .swiper-slide.blue .main-area .text h1 {
+    max-width: 25.4rem;
+  }
+
+  .swiper-slide.blue .text .image .pokeball {
+    top: -4.5rem;
+  }
+
+  .all-info-pokemons {
+    margin-top: -36.8rem;
+  }
+
+  .all-info-pokemons .top {
+    display: block;
+    margin-bottom: 4.7rem;
+  }
+
+  .all-info-pokemons .top h2 {
+    font-size: 3rem;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .all-info-pokemons .top .search {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+
+  .area-all .info-right-container .select-custom {
+    display: block;
+  }
 }
